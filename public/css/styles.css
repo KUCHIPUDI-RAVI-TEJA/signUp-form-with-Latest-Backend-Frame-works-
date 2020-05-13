@@ -1,0 +1,22 @@
+
+body {
+
+  background-color:#cff1ef;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+.gender{
+      margin-bottom: 8px;
+      font-size: large;
+      margin-top: 8px;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}

@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+
+
+<div class="container mt-5">
+  <h1>Register</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email">Full name</label>
+              <input type="text" class="form-control" name="fullName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Date of birth</label>
+              <input type="date" class="form-control" name="date" required>
+            </div>
+            <div class="gender">
+              <label for="email">Gender</label>
+            </div>
+            <div class="">
+              <input type="radio" id="huey" name="gender" value="Male" required>
+              <label for="huey">Male</label>
+            </div>
+
+            <div>
+              <input type="radio" id="dewey" name="gender" value="female" required>
+              <label for="dewey">Female</label>
+            </div>
+
+            <div>
+              <input type="radio" id="louie" name="gender" value="Other"required>
+              <label for="louie">Other</label>
+            </div>
+
+
+            <button type="submit" class="btn btn-dark">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<%- include('partials/header') %>
